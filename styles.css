@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+:root {
+  --bg: #0f0f12;
+  --card: #16161a;
+  --text: #e8e8ee;
+  --muted: #b8b8c7;
+  --brand: #ff3b81;
+  --brand-2: #ffd166;
+}
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+.site-header { background: linear-gradient(135deg, rgba(255,59,129,0.18), rgba(255,209,102,0.12)); border-bottom: 1px solid #222227; }
+.container { max-width: 900px; padding: 24px; margin: 0 auto; }
+h1 { font-weight: 700; letter-spacing: 0.5px; margin: 0 0 6px; }
+.tag { margin: 0; color: var(--muted); }
+
+.disclaimer { background: var(--card); border: 1px solid #26262c; border-radius: 14px; padding: 16px 18px; line-height: 1.6; margin-top: 20px; }
+
+.actions { display: flex; align-items: center; gap: 12px; margin: 18px 0 8px; }
+.btn { background: linear-gradient(135deg, var(--brand), var(--brand-2)); border: none; color: #111; font-weight: 700; padding: 10px 14px; border-radius: 10px; cursor: pointer; transition: transform .06s ease, opacity .2s ease; }
+.btn:hover { transform: translateY(-1px); opacity: 0.95; }
+#copyStatus { color: var(--muted); min-width: 180px; }
+
+.lyrics { background: var(--card); border: 1px solid #26262c; border-radius: 16px; padding: 22px; margin-top: 10px; box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+.lyrics h2 { margin-top: 0; }
+.block { margin: 18px 0 22px; padding: 14px 16px; border-radius: 12px; border: 1px dashed #2a2a30; background: #15151a; }
+.block h3 { margin: 0 0 8px; color: #ff9ab5; letter-spacing: 0.3px; }
+.block.verse h3 { color: #86e3d0; }
+.block.pre h3 { color: #b7a9ff; }
+.block.chorus h3 { color: #ffd166; }
+.block.bridge h3 { color: #f7a6ff; }
+.block.outro h3 { color: #a0f0ff; }
+.block p { margin: 0; font-family: "Tiro Devanagari Hindi", serif; font-size: 1.15rem; line-height: 1.9; }
+
+.site-footer { text-align: center; color: var(--muted); margin: 26px 0 6px; }
+
+@media (max-width: 560px) {
+  .container { padding: 16px; }
+  .block p { font-size: 1.05rem; }
+}
